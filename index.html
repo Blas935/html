@@ -1,57 +1,45 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cv Blas</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#29243f"><title>For 江佳玲 ♡</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;background:#29243f;color:#fff1de;font-family:Georgia,'Times New Roman',serif;background-image:radial-gradient(ellipse at 50% 30%,#514363 0,transparent 65%);overflow-x:hidden}main{width:min(720px,94vw);text-align:center;padding:28px 0 24px}.eyebrow{font:11px monospace;letter-spacing:4px;color:#d3b9cc;margin-bottom:20px}.frame{border:4px solid #1c1b30;outline:2px solid #79667d;box-shadow:8px 8px 0 #211e34;position:relative;background:#514262}canvas{display:block;width:100%;image-rendering:pixelated;aspect-ratio:2/1}.badge{position:absolute;bottom:12px;left:0;right:0;font:10px monospace;letter-spacing:3px;color:#fff0d5}.letter{padding:28px 20px 0}small{font:11px monospace;letter-spacing:2px;color:#d0b5c6}h1{font-size:clamp(25px,5vw,37px);font-weight:400;line-height:1.5;margin:15px 0 8px}p{color:#d6c4d6;font-size:16px;line-height:1.6;margin:0 0 22px}.actions{display:flex;justify-content:center;gap:20px;min-height:60px}button{font:700 16px monospace;min-width:110px;padding:14px 25px;border:3px solid #211e34;cursor:pointer;box-shadow:4px 4px 0 #171729;border-radius:0;touch-action:manipulation}button:focus-visible{outline:3px solid #fff1de;outline-offset:6px}#yes{background:#edabb9;color:#382840}#yes:hover{background:#ffc5ce;transform:translateY(-2px)}#no{background:#a699ba;color:#29243f;z-index:5}footer{margin-top:25px;font:10px monospace;color:#ac94b0;letter-spacing:2px}.heart{font-size:76px;color:#ffb4c8;line-height:1.3;animation:beat 1s infinite;filter:drop-shadow(5px 5px 0 #7f4c72)}.particle{position:fixed;pointer-events:none;color:#ffb4c8;z-index:10;animation:float 2.8s ease-out forwards;font:24px monospace}@keyframes beat{50%{transform:scale(1.15)}}@keyframes float{to{transform:translate(var(--dx),-240px) rotate(20deg);opacity:0}}@media(prefers-reduced-motion:reduce){.heart{animation:none}.particle{display:none}}@media(max-width:450px){main{padding-top:22px}.letter{padding-top:24px}.eyebrow{letter-spacing:2px}footer{letter-spacing:1px}}
+</style>
 </head>
 <body>
-
-    <header>
-        <h1>Rodolfo Blas Romero Valdez</h1>
-        <p>Avenida Luiz Elizondo mty</p>
-        <p>6672554794</p>
-    </header>
-
-    <section>
-        <h2>Objetivo</h2>
-        <p>Puesto de analista en ciberseguridad.</p>
-    </section>
-
-    <section>
-        <h2>Experiencia</h2>
-        <article>
-            <h3>2023 - 2027</h3>
-            <p><strong>Estudiante ITC Tecnologico de mty.</strong></p>
-            <p>Aprendizaje de diversos temas computacionales entre ellos ciberseguridad .</p>
-        </article>
-
-        <article>
-            <h3>2026</h3>
-            <p><strong>Intern en cisco, ciberseguridad en redes.</strong></p>
-        </article>
-
-
-    <section>
-        <h2>Educacion</h2>
-        <article>
-            <h3>2027</h3>
-            <p><strong>Licenciatura en Computer science</strong></p>
-        </article>
-
-        <article>
-            <h3>Certificados</h3>
-            <p><strong>CC (2025), Comptia Security+ (2026), Comptia Network+ (2026)</strong></p>
-        </article>
-    </section>
-
-    <aside>
-        <h2>Intereses</h2>
-        <p>Cocina, programacion de videojuegos, gaming, tecnologia, ciberseguridad</p>
-    </aside>
-
-    <footer>
-        2027, Blas Romero</p>
-    </footer>
-
+<main>
+<div class="eyebrow">A LITTLE PLACE, JUST FOR YOU</div>
+<div class="frame"><canvas id="scene" width="320" height="160" aria-label="A cozy pixel art cottage under the moon, with two cats in a flower garden" role="img"></canvas><div class="badge">YOU + ME · UNDER THE SAME MOON</div></div>
+<section class="letter" aria-live="polite" aria-atomic="true"><small id="chapter">01 / A LITTLE APOLOGY</small><h1 id="title" lang="zh">江佳玲，你愿意原谅我吗？</h1><p id="message">I'm sorry. Can we make a little room for us again?</p><div id="heart" hidden class="heart" aria-label="Animated heart">♥</div><div class="actions"><button id="yes">Yes ♡</button><button id="no">No</button></div></section>
+<footer>MADE WITH LOVE · ONLY FOR 江佳玲</footer>
+</main>
+<script>
+const canvas=document.getElementById('scene'),ctx=canvas.getContext('2d');
+function rect(x,y,w,h,c){ctx.fillStyle=c;ctx.fillRect(x,y,w,h)}
+function draw(){
+rect(0,0,320,160,'#524664');rect(0,95,320,65,'#373e50');
+for(const [x,y] of [[15,19],[42,42],[70,14],[108,28],[159,12],[197,35],[227,16],[281,43],[302,16]]){rect(x,y,1,3,'#f5dbb4');rect(x-1,y+1,3,1,'#f5dbb4')}
+rect(257,18,15,20,'#ffe4b4');rect(253,22,23,12,'#ffe4b4');rect(251,16,13,15,'#524664');
+for(let i=0;i<9;i++){let x=i*42-10;rect(x,80-(i%3)*7,36,30,'#414253');rect(x+8,72-(i%3)*7,18,12,'#414253')}
+rect(103,70,111,63,'#bf8e91');rect(110,75,97,56,'#d3a195');
+for(let i=0;i<9;i++)rect(96+i*7,66-i*4,125-i*14,5,'#775571');
+rect(186,37,10,22,'#967081');rect(184,35,14,4,'#c29b9b');
+rect(145,93,23,40,'#6d5062');rect(149,98,15,35,'#493d51');rect(160,116,2,2,'#f6d69c');
+for(const x of [116,179]){rect(x,86,20,23,'#765469');rect(x+3,89,14,17,'#ffdb99');rect(x+9,89,2,17,'#b27d82');rect(x+3,97,14,2,'#b27d82');rect(x-2,110,24,3,'#976c79')}
+rect(140,132,34,4,'#99858d');rect(136,136,42,4,'#99858d');
+for(let i=0;i<5;i++)rect(140-i*3,141+i*4,37+i*7,3,'#777584');
+for(const x of [30,66,239,281]){rect(x,76,5,59,'#5c6861');rect(x-13,91,31,14,'#687d6c');rect(x-9,78,23,18,'#7d8c77');rect(x-5,69,15,12,'#8e9b7e')}
+for(let i=0;i<45;i++){let x=(i*71+13)%320,y=123+(i*17)%33;rect(x,y,2,5,'#7d927b');if(i%3===0){rect(x-1,y-2,4,3,i%2?'#e8adb9':'#e8cb93');rect(x,y-1,1,1,'#fff0c2')}}
+function cat(x,y,c){rect(x,y,12,10,c);rect(x+1,y-7,10,8,c);rect(x+1,y-10,3,4,c);rect(x+8,y-10,3,4,c);rect(x+3,y-4,1,2,'#383345');rect(x+8,y-4,1,2,'#383345');rect(x+13,y+3,3,7,c);rect(x+11,y+7,5,3,c)}cat(83,131,'#e9c4a4');cat(219,131,'#a3a0bc');
+}draw();
+const yes=document.getElementById('yes'),no=document.getElementById('no'),title=document.getElementById('title'),message=document.getElementById('message'),chapter=document.getElementById('chapter');let step=0,lastX=-1,lastY=-1;
+function dodge(event){event?.preventDefault();const w=no.offsetWidth,h=no.offsetHeight;const maxX=Math.max(8,innerWidth-w-12),maxY=Math.max(8,innerHeight-h-12);let x,y;for(let i=0;i<20;i++){x=12+Math.random()*Math.max(0,maxX-12);y=12+Math.random()*Math.max(0,maxY-12);if(Math.hypot(x-lastX,y-lastY)>100&&(!event||Math.hypot(x+w/2-(event.clientX??0),y+h/2-(event.clientY??0))>110))break}lastX=x;lastY=y;no.style.position='fixed';no.style.left=x+'px';no.style.top=y+'px'}
+no.addEventListener('pointerenter',dodge);no.addEventListener('pointerdown',dodge);no.addEventListener('click',dodge);no.addEventListener('focus',()=>dodge());
+yes.addEventListener('click',()=>{if(step===0){step=1;no.hidden=true;chapter.textContent='02 / ONE MORE LITTLE QUESTION';title.removeAttribute('lang');title.textContent='Am I a good boy?';message.textContent='Your answer means the world to me.';yes.textContent='Yes ♡';yes.focus()}else{step=2;chapter.textContent='03 / MY FAVORITE ANSWER';title.lang='zh';title.textContent='谢谢你，江佳玲 ♡';message.textContent='You make my little world a warmer place.';document.getElementById('heart').hidden=false;yes.hidden=true;burst()}});
+function burst(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;for(let i=0;i<24;i++){const el=document.createElement('span');el.className='particle';el.textContent='♥';el.style.left=(innerWidth/2+(Math.random()-.5)*200)+'px';el.style.top=(innerHeight*.75)+'px';el.style.setProperty('--dx',(Math.random()-.5)*320+'px');el.style.animationDelay=(Math.random()*.5)+'s';el.setAttribute('aria-hidden','true');document.body.append(el);setTimeout(()=>el.remove(),3500)}}
+addEventListener('resize',()=>{if(no.style.position==='fixed'&&!no.hidden)dodge()});
+</script>
 </body>
 </html>
+
